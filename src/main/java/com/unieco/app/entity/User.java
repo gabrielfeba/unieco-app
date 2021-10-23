@@ -1,5 +1,7 @@
 package com.unieco.app.entity;
 
+import lombok.Data;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,6 +9,7 @@ import javax.persistence.Table;
 import java.time.LocalDate;
 
 @Entity
+@Data
 @Table(name = "usuario")
 public class User {
 

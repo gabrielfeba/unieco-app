@@ -3,11 +3,13 @@ package com.unieco.app.entity;
 import lombok.Data;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table(name = "endereco")
 @Data
+@Entity
 public class Address {
 
     @Id
