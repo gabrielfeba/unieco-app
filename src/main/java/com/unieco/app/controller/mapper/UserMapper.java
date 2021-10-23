@@ -11,4 +11,7 @@ public interface UserMapper {
     User map(UserInputDTO userInputDTO);
 
     UserDTO map(User user);
+
+    User map(UserDTO userDTO);
+
 }

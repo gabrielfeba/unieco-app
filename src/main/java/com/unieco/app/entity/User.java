@@ -30,7 +30,10 @@ public class User {
     private String email;
 
     @Column(name = "CD_USUARIO")
-    private String password;
+    private String userName;
+
+    @Column(name = "CD_SENHA")
+    private Long password;
 
     @Column(name = "FG_TIPO_LOGIN")
     private String userType;

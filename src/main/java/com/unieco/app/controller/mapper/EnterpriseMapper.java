@@ -11,4 +11,6 @@ public interface EnterpriseMapper {
     Enterprise map(EnterpriseInputDTO enterpriseInputDTO);
 
     EnterpriseDTO map(Enterprise enterprise);
+
+    Enterprise map(EnterpriseDTO enterpriseDTO);
 }

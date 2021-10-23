@@ -31,4 +31,6 @@ public class EnterpriseDTO {
 
     private String instagram;
 
+    private AddressDTO addressDTO;
+
 }

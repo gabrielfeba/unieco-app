@@ -11,4 +11,6 @@ public interface AddressMapper {
     Address map(AddressInputDTO addressInputDTO);
 
     AddressDTO map(Address address);
+
+    Address map(AddressDTO addressDTO);
 }
