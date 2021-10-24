@@ -30,7 +30,7 @@ public class User {
     private String userName;
 
     @Column(name = "CD_SENHA")
-    private Long password;
+    private String password;
 
     @Column(name = "FG_TIPO_LOGIN")
     private String userType;
@@ -84,11 +84,11 @@ public class User {
         this.userName = userName;
     }
 
-    public Long getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(Long password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
