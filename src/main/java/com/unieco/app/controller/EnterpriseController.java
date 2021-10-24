@@ -3,7 +3,6 @@ package com.unieco.app.controller;
 import com.unieco.app.controller.mapper.EnterpriseMapper;
 import com.unieco.app.controller.model.EnterpriseDTO;
 import com.unieco.app.controller.model.EnterpriseInputDTO;
-import com.unieco.app.entity.Address;
 import com.unieco.app.entity.Enterprise;
 import com.unieco.app.service.EnterpriseService;
 import org.springframework.beans.factory.annotation.Autowired;

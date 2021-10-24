@@ -36,7 +36,7 @@ public class UserController {
     }
 
     @GetMapping("/user/data/{username}")
-    public ResponseEntity<UserDTO> getDataForUserName(@RequestParam("username") String username) {
+    public ResponseEntity<UserDTO> getDataForUserName(@PathVariable("username") String username) {
         UserDTO response = userDataService.getDataForUserName(username);
         return  ResponseEntity.ok(response);
     }
