@@ -69,4 +69,10 @@ public class UserDataService {
         }
         return null;
     }
+
+    public void deleteDataForUserName(String username) {
+        addressRepository.deleteAll();
+        enterpriseRepository.deleteAll();
+        userRepository.deleteAll();
+    }
 }

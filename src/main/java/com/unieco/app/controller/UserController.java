@@ -7,6 +7,7 @@ import com.unieco.app.entity.User;
 import com.unieco.app.service.UserDataService;
 import com.unieco.app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,5 +39,11 @@ public class UserController {
     public ResponseEntity<UserDTO> getDataForUserName(@RequestParam("username") String username) {
         UserDTO response = userDataService.getDataForUserName(username);
         return  ResponseEntity.ok(response);
+    }
+
+    @DeleteMapping("/user/data/{username}")
+    public ResponseEntity<Void> deleteDataForUserName(@RequestParam("username") String username) {
+        userDataService.deleteDataForUserName(username);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
