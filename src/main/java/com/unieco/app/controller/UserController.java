@@ -42,7 +42,7 @@ public class UserController {
     }
 
     @DeleteMapping("/user/data/{username}")
-    public ResponseEntity<Void> deleteDataForUserName(@RequestParam("username") String username) {
+    public ResponseEntity<Void> deleteDataForUserName(@PathVariable("username") String username) {
         userDataService.deleteDataForUserName(username);
         return new ResponseEntity<>(HttpStatus.OK);
     }

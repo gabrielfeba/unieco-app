@@ -21,8 +21,6 @@ public class UserInputDTO {
 
     private String userType;
 
-    private String userName;
-
     public String getName() {
         return name;
     }
