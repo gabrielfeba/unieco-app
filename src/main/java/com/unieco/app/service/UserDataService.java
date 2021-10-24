@@ -46,6 +46,7 @@ public class UserDataService {
             EnterpriseDTO enterprise = getEnterprise(user.getId());
             UserDTO userDTO = userMapper.map(user);
             userDTO.setEnterprise(enterprise);
+            return userDTO;
         }
         return null;
     }
@@ -57,6 +58,7 @@ public class UserDataService {
             AddressDTO address = getAddress(enterprise.getId());
             EnterpriseDTO enterpriseDTO = enterpriseMapper.map(enterprise);
             enterpriseDTO.setAddressDTO(address);
+            return enterpriseDTO;
         }
         return null;
     }
